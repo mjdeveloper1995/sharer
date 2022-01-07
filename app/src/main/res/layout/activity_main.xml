@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_layout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="@dimen/common_padding">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivBanner"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_220"
+                android:background="@drawable/image_round_corner"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/colth"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/dp_28"
+                android:layout_height="@dimen/dp_28"
+                android:layout_margin="@dimen/common_margin"
+                android:scaleType="centerCrop"
+                android:src="@drawable/heart"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivClothIcon"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_marginTop="@dimen/common_margin"
+                android:src="@drawable/cloths"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivBanner" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvClothTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_8"
+                android:text="@string/clothes_supplies"
+                android:textColor="@color/font_color"
+                app:layout_constraintBottom_toBottomOf="@id/ivClothIcon"
+                app:layout_constraintLeft_toRightOf="@id/ivClothIcon"
+                app:layout_constraintTop_toTopOf="@id/ivClothIcon" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/tvDot"
+                android:layout_width="@dimen/dp_4"
+                android:layout_height="@dimen/dp_4"
+                android:layout_marginStart="@dimen/dp_8"
+                android:src="@drawable/dot"
+                app:layout_constraintBottom_toBottomOf="@id/ivClothIcon"
+                app:layout_constraintLeft_toRightOf="@id/tvClothTitle"
+                app:layout_constraintTop_toTopOf="@id/ivClothIcon" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_4"
+                android:text="@string/sweaters_jackets"
+                android:textColor="@color/font_color"
+                app:layout_constraintBottom_toBottomOf="@id/ivClothIcon"
+                app:layout_constraintLeft_toRightOf="@id/tvDot"
+                app:layout_constraintTop_toTopOf="@id/ivClothIcon" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivMapIcon"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_8"
+                android:src="@drawable/mappin"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivClothIcon" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvMapTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_8"
+                android:text="@string/map_add"
+                android:textColor="@color/font_color"
+                app:layout_constraintBottom_toBottomOf="@id/ivMapIcon"
+                app:layout_constraintLeft_toRightOf="@id/ivMapIcon"
+                app:layout_constraintTop_toTopOf="@id/ivMapIcon" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvBasicDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:text="@string/basic_detail"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="@id/ivMapIcon"
+                app:layout_constraintTop_toBottomOf="@id/ivMapIcon" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivUnisex"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_8"
+                android:src="@drawable/unisex"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvBasicDetail" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvUnisexTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_8"
+                android:text="@string/unisex"
+                android:textColor="@color/font_color"
+                app:layout_constraintBottom_toBottomOf="@id/ivUnisex"
+                app:layout_constraintLeft_toRightOf="@id/ivUnisex"
+                app:layout_constraintTop_toTopOf="@id/ivUnisex" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivCalendar"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_8"
+                android:src="@drawable/calendar_color"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivUnisex" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCalenderTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_8"
+                android:text="@string/cal_title"
+                android:textColor="@color/font_color"
+                app:layout_constraintBottom_toBottomOf="@id/ivCalendar"
+                app:layout_constraintLeft_toRightOf="@id/ivCalendar"
+                app:layout_constraintTop_toTopOf="@id/ivCalendar" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvMoreDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:text="@string/more_detail"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="@id/ivCalendar"
+                app:layout_constraintTop_toBottomOf="@id/ivCalendar" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCondition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:text="@string/condition"
+                android:textColor="@color/font_black"
+                android:textSize="@dimen/font_small"
+                app:layout_constraintLeft_toLeftOf="@id/tvMoreDetail"
+                app:layout_constraintTop_toBottomOf="@id/tvMoreDetail" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvConditionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_8"
+                android:text="@string/as_good_as_new"
+                android:textColor="@color/font_color"
+                android:textSize="@dimen/font_small"
+                app:layout_constraintBottom_toBottomOf="@id/tvCondition"
+                app:layout_constraintLeft_toRightOf="@id/tvCondition"
+                app:layout_constraintTop_toTopOf="@id/tvCondition" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvMoreAbout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:text="@string/more_about"
+                android:textColor="@color/font_black"
+                android:textSize="@dimen/font_small"
+                app:layout_constraintLeft_toLeftOf="@id/tvCondition"
+                app:layout_constraintTop_toBottomOf="@id/tvCondition" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvMoreBoutText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_8"
+                android:text="@string/baby_cloths"
+                android:textColor="@color/font_color"
+                android:textSize="@dimen/font_small"
+                app:layout_constraintBottom_toBottomOf="@id/tvMoreAbout"
+                app:layout_constraintLeft_toRightOf="@id/tvMoreAbout"
+                app:layout_constraintTop_toTopOf="@id/tvMoreAbout" />
+
+            <include
+                android:id="@+id/profileCard"
+                layout="@layout/profile_card_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_100"
+                android:layout_marginTop="@dimen/dp_20"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvMoreAbout" />
+
+            <include
+                android:id="@+id/btnChat"
+                layout="@layout/btn_purple"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginTop="@dimen/dp_30"
+                app:layout_constraintTop_toBottomOf="@id/profileCard" />
+
+            <include
+                android:id="@+id/btnCall"
+                layout="@layout/btn_yellow"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginTop="@dimen/dp_16"
+                app:layout_constraintTop_toBottomOf="@id/btnChat" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

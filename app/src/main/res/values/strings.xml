@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">SharerUI</string>
+    <string name="baby_winter_clothes">Baby Winter Clothes</string>
+    <string name="clothes_supplies"><![CDATA[Clothes & Supplies]]></string>
+    <string name="sweaters_jackets"><![CDATA[Sweaters & Jackets]]></string>
+    <string name="dot">-</string>
+    <string name="map_add">Mahavir Nagar , Kandivali West</string>
+    <string name="basic_detail">Basic Detail</string>
+    <string name="unisex">Unisex</string>
+    <string name="cal_title">3-5 Year Preschooler</string>
+    <string name="more_detail">More Detail</string>
+    <string name="condition">Condition :</string>
+    <string name="as_good_as_new">As good as new</string>
+    <string name="more_about">More about :</string>
+    <string name="baby_cloths">Baby Winter Clothes</string>
+    <string name="deepa_joshi">Deepa Joshi</string>
+    <string name="member_since">Member since</string>
+    <string name="_20_sept_2021">20 Sept 2021</string>
+    <string name="view_profile"><u>View profile</u></string>
+    <string name="chat">Chat</string>
+    <string name="call">Call</string>
+    <string name="since_20_sept_2021">Since 20 Sept 2021</string>
+    <string name="followers">Followers</string>
+    <string name="_2">2</string>
+    <string name="lend">Lend</string>
+    <string name="follow">Follow</string>
+    <string name="bhatinda_punjab">Bhatinda, Punjab</string>
+</resources>
